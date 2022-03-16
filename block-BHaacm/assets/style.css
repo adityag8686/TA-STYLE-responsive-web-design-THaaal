@@ -1,0 +1,188 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Hubballi', cursive;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* general propety */
+* {
+    box-sizing: border-box;  }
+
+.container{
+   max-width: 1200px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.flex-33{
+    flex: 0 1 33%;
+    margin: 20px;
+}
+.flex-48{
+    flex: 0 1 48%;
+}
+.flex-1{
+	display: flex;
+}
+.justify-content{
+    justify-content: space-between;
+}
+.align-item{
+    align-items: center;
+}
+.max-width{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.btn{
+    background-color: #37B667;
+    font-size: 24px;
+    padding: 5px;
+    border: none;
+    border-radius: 8px;
+   
+}
+/* header */
+header{
+    background-color: #222946;
+    padding: 10px;
+}
+.highlight a{
+    color: #37B667;
+}
+.heading a{
+    font-size: 24px;
+    font-weight: 800;
+    padding: 20px;
+}
+
+/* main body */
+/* section first */
+.section-first{
+    background-color: #E9ECFC;
+    padding: 50px 0;
+}
+.intro{
+    margin-right: 20px;
+}
+.intro button{
+    margin-top:40px;
+}
+h1{
+    font-size: 44px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.intro p{
+    font-size: 24px;
+    color: #8C8D91;
+}
+/* second section */
+h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    padding: 40px;
+}
+h3{
+    font-size: 30px;
+    font-weight: 900;
+    padding: 5px;
+    margin: 10px 0;
+}
+.flex-33 p{
+    font-size: 20px;
+    color: #8C8D91;
+    padding: 2px;
+    margin-bottom: 10px;
+}
+/* footer */
+footer{
+    background-color: #222946;
+    padding: 20px;
+}
+small{
+    font-size: 30px;
+    color: white;
+    padding-left: 5px;
+}
+.links i{
+    font-size: 30px;
+    margin-left: 20px;
+    color: white;
+}
+
+
+/* for small screen */
+
+@media screen and (max-width: 768px) {  
+    .flex-1{
+        flex-wrap: wrap;
+    }
+    .hd{
+        margin-top: 10px;
+    }
+    .reverse{
+        flex-direction: column-reverse;
+    }
+    .flex-48{
+        flex: 1 1 100%;
+        margin: 20px;
+    }
+    .flex{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .flex-33{
+        flex: 1 1 100%;
+        margin: 20px;
+
+    }
+    .links {
+        margin-top: 10px;
+    }
+  }
