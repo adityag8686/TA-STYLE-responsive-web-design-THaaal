@@ -1,0 +1,395 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.5;
+    font-family: 'Nunito Sans', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* general propety */
+
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.flex-1{
+	display: flex;
+}
+.justify-content{
+    justify-content: space-evenly;
+}
+.align-item{
+    align-items: center;
+}
+.flex22{
+    flex: 0 1 22%;
+}
+.flex33{
+    flex: 0 1 33%;
+}
+.flex48{
+    flex: 0 1 48%;
+}
+.flex65{
+    flex: 0 1 65%;
+}
+.flex78{
+    flex: 0 1 78%;
+}
+.btn{
+    color: white;
+    background-color: #F9234D;
+    border: none;
+    padding: 0.2rem;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.max-width{
+    width: 100%;
+}
+/* header */
+/* section for heading */
+header{
+    background:linear-gradient(rgba(53,34,165,0.8),rgba(53,34,165,0.8)), url(../assets/banner.png);
+    width: 100%;
+    padding: 1.4rem 0;
+}
+h1{
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+}
+.hero li{
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+.hero li a{
+    margin-right: 1rem;
+    
+}
+.hero .btn {
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+/* section for body of heading */
+.hero-content{
+    padding: 2.5rem 0;
+}
+.hero-content h2{
+    font-size: 3rem;
+    color: white;
+    font-weight: bolder;
+    margin-right: 12rem;
+    margin-top: 3.4rem;
+}
+.hero-content h2 strong{
+    color: #F9234D;
+}
+.hero-content p{
+    font-size: 1.3rem;
+    margin: 1.4rem 0;
+    margin-right: 9rem;
+    color: white;
+}
+.hero-content .btn{
+    padding: 0.8rem;
+}
+#toggle{
+    display: none;
+}
+/* event section */
+.event{
+margin: 3rem 0;
+}
+.event img{
+    height: 60vh;
+    object-fit: cover;
+    border-radius: .8rem;
+}
+.event h2{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.event p{
+    color: #6C6B72;
+    margin-bottom: 1.4rem;
+}
+.event .btn{
+    padding: .5rem;
+    border-radius: .4rem;
+}
+/* note section */
+.note{
+    background-color: #DFECFF;
+    padding: 2rem 0;
+}
+.note h2{
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: center;
+    padding: 2rem 0;
+}
+/* box design */
+.join-box {
+    border: .4rem dashed #F9234D;
+    color:#F9234D;
+    margin: .8rem 1rem;
+    padding: .8rem;
+}
+.join-box legend{
+    font-size: 3rem;
+    margin-left: 2.4rem;
+}
+.join-box h3{
+    text-align: left;
+    font-size: 1.8rem;
+    color: black;
+    font-weight: bold;
+}
+.join-box p{
+    color: black;
+    font-weight: 100;
+}
+/* Shedule  */
+.schedule h2{
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: center;
+    padding: 2rem 0; 
+}
+.date{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    border: 1px solid black;
+    padding: .8rem;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: #F9234D;
+    color: white;
+    border: none;
+}
+.bg{
+    background-color: white;
+    color: #F9234D;
+    border: 2px dotted #F9234D;
+
+}
+.line{
+    width: .1rem;
+    height: 3.5rem;
+    border: 2px dotted #F9234D;;
+    margin-left: 45px;
+}
+.shedule-content img{
+    height: 6rem;
+    margin-bottom: 2.5rem;
+    object-fit: cover;
+}
+.info{
+    margin-left: 2rem;
+}
+.info h3{
+    font-size: 1.8rem;
+    font-weight: bolder;
+}
+.info p{
+    font-size: .9rem;
+    font-weight: 100;
+    color: #6C6B72;
+}
+
+
+ /*demo  */
+.demo{
+    background-color: #DFECFF;
+    padding: 2.5rem 0;
+}
+.demo img{
+    width: 7rem;
+    margin: 2rem;
+}
+.change{
+    background-color: #F9234D;
+    text-align: center;
+}
+/* video */
+.video{
+    margin: 6rem;
+}
+/* news */
+.news{
+    background-color: #DFECFF;
+    padding: 5rem 0;
+}
+.news h2{
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: center;
+}
+.news-article{
+    margin: 0 2rem;
+    padding: 2rem 0;
+}
+.news-article h3{
+    text-align: left;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: bolder;
+}
+.news-article p{
+    color: #6C6B72;
+    margin-bottom: .8rem;
+}
+.news-article a{
+    color: black;
+    text-decoration: underline;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.red a{
+    color: #F9234D;
+}
+/* footer */
+.foot{
+    background-color:#23347B;
+    padding: 1.3rem 0;
+}
+.links{
+    margin: 0 8rem;
+}
+.links h4{
+    color: white;
+    font-weight: bolder;
+    font-size: 1.4rem;
+}
+.list li{
+    padding-right: 2rem;
+    font-size: 1.2rem;
+    color: #6C6B72;
+}
+.social i{
+    color: white;
+    padding-left: 1.4rem;
+    font-size: 1.2rem;
+}
+.company{
+    background-color: #102169;
+    text-align: center;
+    font-weight: 100;
+    padding: 1rem 0;
+    color: #DFECFF;
+} 
+
+/* media querry */
+
+@media only screen and (max-width: 768px) {
+html{
+    font-size: 10px;
+}
+.container{
+    padding: 0 2rem;
+}
+.center{
+    text-align: center;
+}
+.flex-100{
+    flex: 1 1 100%;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+}
+.line{
+    margin-left: 3rem;
+}
+.info p{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.news-article h3{
+    font-size: 2rem;
+}
+.news-article p{
+    font-size: 1.2rem;
+}
+.flex-none{
+    display: table;
+}
+.nav{
+    display: none;
+}
+#toggle:checked ~ .nav{
+    display: inline-block;
+}
+.bar{
+    color: white;
+    font-size: 1.5rem;
+}
+.nav{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: #102169;
+    padding-top: 10rem;
+}
+.nav ul li {
+    margin: 40px;
+}
+nav .btn {
+    display: inline-block;
+    margin-left: 310px;
+}
+}
